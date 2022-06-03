@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+# coding: utf-8
+
+# In[4]:
+
 
 numbersteps = 5
 numberislands = 5
@@ -39,15 +43,28 @@ for startisland in range(1,numberislands+1):
     allpiratewalks.extend(piratewalks)
     
 # check target answer against all possible walks
-for walks in range(len(allpiratewalks)):
+for walk in range(len(allpiratewalks)):
     foundpirate = False
-    for step in range(len(allpiratewalks[walks])):
-        if allpiratewalks[walks][step] == targetwalk[step]:
+    for step in range(len(allpiratewalks[walk])):
+        if allpiratewalks[walk][step] == targetwalk[step]:
             foundpirate = True
             break
     if foundpirate == False:
         print("Pirate Escaped")
-        print(allpiratewalks[walks])
+        print(allpiratewalks[walk])
         print(targetwalk)
        
 # print(allpiratewalks)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
